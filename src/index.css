@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #1a1612;
+  --color-cream: #f5eee0;
+  --color-gold: #c9a97f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: var(--color-bg);
+  background-image: radial-gradient(ellipse 120% 80% at 50% -20%, rgba(201, 169, 127, 0.12), transparent),
+    radial-gradient(ellipse 80% 50% at 100% 50%, rgba(40, 32, 24, 0.5), transparent);
+  color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
