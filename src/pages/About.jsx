@@ -8,7 +8,7 @@ export default function About() {
       <header className="page-header about-page-header">
         <h1 className="page-title">О нас</h1>
         <p className="page-subtitle about-page-lead">
-          {site.brand} — {site.brandFull}. Мастерская и шоурум в центре {site.city}.
+          {site.brand} — {site.brandFull}. Мастерская и шоурум в Приморском районе {site.city}.
         </p>
       </header>
 
@@ -51,7 +51,8 @@ export default function About() {
         </h2>
         <ul className="about-work-grid">
           <li>
-            Шоурум в центре города — можно примерить сумку или ремень по предварительной записи.
+            Шоурум в Приморском районе — можно примерить сумку или ремень по предварительной
+            записи.
           </li>
           <li>
             Доставка по России курьерскими службами и до пунктов выдачи — сроки согласуем при заказе.
