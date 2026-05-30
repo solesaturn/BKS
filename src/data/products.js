@@ -17,6 +17,9 @@ export function displayNameFromFilename(filename) {
   let s = base.replace(/^\d+\.?\s*/, '').trim()
   s = s.replace(/\.{2,}/g, '.')
   s = s.replace(/\.+$/g, '')
+  // Орфографическая нормализация для витрины: "кожаный" пишется с одной "н".
+  s = s.replace(/\bКожанн/g, 'Кожан')
+  s = s.replace(/\bкожанн/g, 'кожан')
   if (s.length) {
     s = s.charAt(0).toUpperCase() + s.slice(1)
   }
